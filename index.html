@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Terminliste</title>
+</head>
+<body>
+    <h1>📅 Terminliste</h1>
+    <form method="POST" action="/eintragen">
+        <label>Dein Name:</label>
+        <input type="text" name="name" required>
+        <label>Wähle einen freien Termin:</label>
+        <select name="slot">
+            {% for i, termin in enumerate(termine) %}
+                {% if termin.name == "" %}
+                    <option value="{{ i }}">{{ termin.zeit }}</option>
+                {% endif %}
+            {% endfor %}
+        </select>
+        <button type="submit">Eintragen</button>
+    </form>
+
+    <h2>Aktuelle Einträge</h2>
+    <ul>
+        {% for termin in termine %}
+            <li><strong>{{ termin.zeit }}</strong>: {{ termin.name or "Frei" }}</li>
+        {% endfor %}
+    </ul>
+    <p><a href="/admin">🔐 Zum Adminbereich</a></p>
+</body>
+</html>
