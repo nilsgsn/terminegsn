@@ -57,7 +57,7 @@ with tab1:
                         t["name"] = name
                         save_data(data)
                         st.success(f"Du wurdest für {slot} eingetragen!")
-                        st.experimental_rerun()
+                        st.rerun()
     else:
         st.info("Alle Termine sind bereits vergeben.")
 
