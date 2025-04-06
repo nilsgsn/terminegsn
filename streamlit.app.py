@@ -35,7 +35,7 @@ initialize()
 
 # ==== Oberfläche ====
 st.set_page_config(page_title="Terminliste", layout="centered")
-st.title("📅 Öffentliche Terminliste")
+st.title("Beratungstermine Frau Jeyapala")
 
 tab1, tab2 = st.tabs(["➕ Termin eintragen", "🔐 Adminbereich"])
 
