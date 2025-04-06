@@ -76,7 +76,7 @@ with tab2:
                 t["name"] = ""
             save_data(data)
             st.success("Alle Termine wurden zurückgesetzt.")
-            st.experimental_rerun()
+            st.rerun()
         else:
             st.error("Falsches Passwort!")
 # Ganz unten auf der Seite
