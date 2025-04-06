@@ -83,9 +83,23 @@ with tab2:
 # Hinweis ganz unten
 st.markdown("<hr>", unsafe_allow_html=True)  # Trennlinie für besseren Look
 
-st.markdown("<p style='text-align: center; font-size: smaller;'>made by Nils Übach in collaboration with ChatGPT</p>", unsafe_allow_html=True)
-import streamlit as st
-# URL des Logos
-logo_url = "https://raw.githubusercontent.com/nilsgsn/terminegsn/main/school_logo.png"
-# Logo anzeigen
-st.image(logo_url, width=150)
+# Ganz unten auf der Seite
+st.markdown(
+    """
+    <style>
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .footer img {
+            max-height: 100px;
+        }
+    </style>
+    <div class="footer">
+        <img src="images/school_logo.png" alt="Logo der Schule">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
