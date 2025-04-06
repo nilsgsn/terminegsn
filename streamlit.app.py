@@ -83,6 +83,11 @@ with tab2:
 # Hinweis ganz unten
 st.markdown("<hr>", unsafe_allow_html=True)  # Trennlinie für besseren Look
 
+# Hinweis ganz unten
+st.markdown("<hr>", unsafe_allow_html=True)  # Trennlinie für besseren Look
+
+st.markdown("<p style='text-align: center; font-size: smaller;'>made by Nils Übach in collaboration with ChatGPT</p>", unsafe_allow_html=True)
+
 # Ganz unten auf der Seite
 st.markdown(
     """
