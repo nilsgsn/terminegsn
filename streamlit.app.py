@@ -94,7 +94,7 @@ st.markdown(
         }
     </style>
     <div class="footer">
-        <img src="https://raw.githubusercontent.com/nilsgsn/DEIN_REPO/main/images/logo.png" alt="Logo der Schule">
+        <img src="https://raw.githubusercontent.com/nilsgsn/warmup_generator/main/images/school_logo.png" alt="Logo der Schule">
     </div>
     """,
     unsafe_allow_html=True
