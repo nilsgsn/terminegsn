@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 DATA_FILE = "data.json"
-ADMIN_PASSWORD = "geheim123"  # ⚠️ Hier dein Admin-Passwort setzen
+ADMIN_PASSWORD = "Nord1990!"  # ⚠️ Hier dein Admin-Passwort setzen
 
 
 def load_data():
