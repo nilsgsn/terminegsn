@@ -80,8 +80,6 @@ with tab2:
         else:
             st.error("Falsches Passwort!")
 # Ganz unten auf der Seite
-# Hinweis ganz unten
-st.markdown("<hr>", unsafe_allow_html=True)  # Trennlinie für besseren Look
 
 # Hinweis ganz unten
 st.markdown("<hr>", unsafe_allow_html=True)  # Trennlinie für besseren Look
