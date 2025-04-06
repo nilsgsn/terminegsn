@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - Zurücksetzen</title>
+</head>
+<body>
+    <h1>🔐 Adminbereich</h1>
+    {% if success %}
+        <p style="color:green;">Die Liste wurde erfolgreich zurückgesetzt.</p>
+    {% endif %}
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+        <label>Passwort:</label>
+        <input type="password" name="password">
+        <button type="submit">Liste zurücksetzen</button>
+    </form>
+    <p><a href="/">Zurück zur Terminliste</a></p>
+</body>
+</html>
