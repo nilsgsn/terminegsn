@@ -83,11 +83,8 @@ with tab2:
 
 # Hinweis ganz unten
 st.markdown("<hr>", unsafe_allow_html=True)  # Trennlinie für besseren Look
-
 st.markdown("<p style='text-align: center; font-size: smaller;'>designed by Nils Übach, with contributions from ChatGPT</p>", unsafe_allow_html=True)
-
 import streamlit as st
-
 # URL des Logos
 logo_url = "https://raw.githubusercontent.com/nilsgsn/terminegsn/main/images/school_logo.png"
 
