@@ -79,3 +79,23 @@ with tab2:
             st.experimental_rerun()
         else:
             st.error("Falsches Passwort!")
+# Ganz unten auf der Seite
+st.markdown(
+    """
+    <style>
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .footer img {
+            max-height: 100px;
+        }
+    </style>
+    <div class="footer">
+        <img src="https://raw.githubusercontent.com/nilsgsn/DEIN_REPO/main/images/logo.png" alt="Logo der Schule">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
