@@ -91,25 +91,20 @@ import streamlit as st
 logo_url = "https://raw.githubusercontent.com/nilsgsn/terminegsn/main/images/school_logo.png"
 # Logo anzeigen
 st.image(logo_url, width=150)
-
-
-# Ganz unten auf der Seite
+# CSS zur Zentrierung des Logos
 st.markdown(
     """
     <style>
-        .footer {
+        .centered {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 20px;
-        }
-        .footer img {
-            max-height: 100px;
+            justify-content: center;  /* Horizontale Zentrierung */
+            align-items: center;  /* Vertikale Zentrierung */
         }
     </style>
-    <div class="footer">
-        <img src="images/school_logo.png" alt="Logo der Schule">
-    </div>
     """,
     unsafe_allow_html=True
 )
+
+# Logo in einem div mit der Klasse 'centered' einbetten
+st.markdown('<div class="centered"><img src="' + logo_url + '" width="150"></div>', unsafe_allow_html=True)
+
